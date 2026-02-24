@@ -1,4 +1,4 @@
-module go-rbac-h3-sim
+module rental-architecture-back
 
 go 1.24.0
 

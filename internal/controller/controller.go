@@ -8,8 +8,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"go-rbac-h3-sim/internal/db"
-	"go-rbac-h3-sim/internal/services"
+	"rental-architecture-back/internal/db"
+	"rental-architecture-back/internal/services"
 )
 
 type Deps struct {

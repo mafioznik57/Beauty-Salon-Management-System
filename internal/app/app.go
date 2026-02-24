@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"go-rbac-h3-sim/internal/db"
-	"go-rbac-h3-sim/internal/services"
+	"rental-architecture-back/internal/db"
+	"rental-architecture-back/internal/services"
 )
 
 type Config struct {

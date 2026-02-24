@@ -9,8 +9,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 
-	"go-rbac-h3-sim/internal/app"
-	"go-rbac-h3-sim/internal/controller"
+	"rental-architecture-back/internal/app"
+	"rental-architecture-back/internal/controller"
 )
 
 func getenv(k, def string) string {

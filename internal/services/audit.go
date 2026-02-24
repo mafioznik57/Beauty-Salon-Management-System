@@ -3,7 +3,7 @@ package services
 import (
 	"time"
 
-	"go-rbac-h3-sim/internal/db"
+	"rental-architecture-back/internal/db"
 )
 
 type AuditService struct {
