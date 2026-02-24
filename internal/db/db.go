@@ -13,9 +13,7 @@ type DB struct{ SQL *sql.DB }
 var ErrUnsupportedDSN = errors.New("unsupported DSN: only postgres:// or postgresql:// URLs or libpq key=value DSNs are accepted")
 
 func Open(dsn string) (*DB, error) {
-	// Accept either postgres URL (postgres:// or postgresql://) or libpq-style key=value DSN
 	if !strings.HasPrefix(dsn, "postgres://") && !strings.HasPrefix(dsn, "postgresql://") {
-		// allow libpq style like: host=... user=... password=... dbname=... port=... sslmode=...
 		if !strings.Contains(dsn, "=") {
 			return nil, ErrUnsupportedDSN
 		}
